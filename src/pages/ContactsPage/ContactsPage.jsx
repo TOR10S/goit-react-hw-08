@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchContacts } from './redux/contactsOps';
-import { selectContacts, selectError, selectLoading } from './redux/contactsSlice';
-import ContactList from './components/ContactList/ContactList';
-import ContactsForm from './components/ContactForm/ContactForm';
-import SearchBox from './components/SearchBox/SearchBox';
+import { fetchContacts } from '../../redux/contacts/operations';
+import { selectContacts, selectError, selectLoading } from '../../redux/contacts/slice';
+import ContactList from '../../components/ContactList/ContactList';
+import ContactsForm from '../../components/ContactForm/ContactForm';
+import SearchBox from '../../components/SearchBox/SearchBox';
 
 const App = () => {
   const dispatch = useDispatch();
