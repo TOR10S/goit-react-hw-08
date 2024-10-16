@@ -23,7 +23,6 @@ export default function App () {
   return isRefreshing ? (
     <b>Refreshing user...</b>
   ) : (
-   <BrowserRouter>
     <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -47,6 +46,5 @@ export default function App () {
         />
       </Routes>
     </Layout>
-    </BrowserRouter>
   );
 };
